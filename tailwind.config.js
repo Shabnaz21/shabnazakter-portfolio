@@ -14,7 +14,15 @@ export default {
   },
   plugins:  [require("daisyui")],
   daisyui: {
-    themes: ["night"],
-  },
+    themes: ["night",
+      {
+        mytheme: {
+          "primary": "#5394CF",
+          "secondary": "#f6d860",
+        }
+      
+    }],
+
+},
 }
 
