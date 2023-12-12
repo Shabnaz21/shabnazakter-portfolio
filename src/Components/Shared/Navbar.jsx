@@ -1,40 +1,87 @@
-import { NavLink } from "react-router-dom";
-
+import { Link } from 'react-scroll';
 const Navbar = () => {
+    const handleSetActive = (to) => {
+        console.log(to);
+    };
 
     const menu = <>
-        <li><NavLink to='/'
+        <li><Link 
+            to='hero'
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onSetActive={handleSetActive}
+
             className={({ isActive }) =>
                 isActive ? 'btn bg-[#5394CF] border-0 text-lg hover:bg-[#029D94] btn-md font-jost text-white'
                     : 'btn-neutral text-lg'
             }
         
-        >Home</NavLink></li>
-        <li><NavLink
-            to ='/about'
+        >Home</Link></li>
+        <li><Link
+            to='about'
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onSetActive={handleSetActive}
+
+
             className={({ isActive }) =>
                 isActive ? 'btn bg-[#5394CF] border-0 text-lg hover:bg-[#029D94] btn-md font-jost text-white'
                     : 'btn-neutral text-lg'
             }
-        >About Me</NavLink></li>
-        <li><NavLink
-            to='/project'
+        >About Me</Link></li>
+        <li><Link
+            to='skill'
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onSetActive={handleSetActive}
+
+
             className={({ isActive }) =>
                 isActive ? 'btn bg-[#5394CF] border-0 text-lg hover:bg-[#029D94] btn-md font-jost text-white'
                     : 'btn-neutral text-lg'
             }
-        >Project</NavLink></li>
-        <li><NavLink
-            to='/contact'
+        >Skill</Link></li>
+        <li><Link
+            to='project'
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onSetActive={handleSetActive}
+
             className={({ isActive }) =>
                 isActive ? 'btn bg-[#5394CF] border-0 text-lg hover:bg-[#029D94] btn-md font-jost text-white'
                     : 'btn-neutral text-lg'
             }
-        >Contact Me</NavLink></li>
+        >Showcase</Link></li>
+        <li><Link
+            to='contact'
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onSetActive={handleSetActive}
+
+            className={({ isActive }) =>
+                isActive ? 'btn bg-[#5394CF] border-0 text-lg hover:bg-[#029D94] btn-md font-jost text-white'
+                    : 'btn-neutral text-lg'
+            }
+        >Contact Me</Link></li>
         
     </>
     return (
-        <section className="bg-neutral ">
+        <section>
             <div className="container mx-auto p-5">
                 <div className="navbar">
                     <div className="navbar-start">
@@ -55,8 +102,9 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <a className="btn bg-[#5394CF] border-0 text-md
-                        hover:bg-[#029D94] font-jost  text-white">LET&apos;S TALK</a>
+                        <p onClick={() => window.location = 'mailto:shabnaz608@gmail.com'}
+                            className="btn bg-[#5394CF] border-0 text-md
+                        hover:bg-[#029D94] font-jost  text-white">LET&apos;S TALK</p>
                     </div>
                 </div>
             </div>
