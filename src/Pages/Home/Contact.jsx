@@ -34,11 +34,11 @@ const Contact = () => {
         <section name='contact'>
             <div className="Container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div
-                    className="lg:w-2/5 md:w-1/2 bg-white rounded-lg  hidden 
-                     sm:mr-10 p-10 md:flex items-end justify-start relative">
-                    <img src="https://www.livecobu.com/hubfs/Illustrations%20(3).png" alt="" />
+                    className="lg:w-2/5 md:w-1/2 bg-white rounded-lg hidden 
+                     sm:mr-10 p-10 items-center lg:flex lg:place-content-center">
+                    <img src="https://www.livecobu.com/hubfs/Illustrations%20(3).png" alt="" className="xl:h-5/6 xl:w-5/6 lg:h-1/2 " />
                 </div>
-                <div className="lg:w-3/5 md:w-1/2 bg-gray-200 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                <div className="lg:w-3/5 md:w-full bg-gray-200 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
                     <div className="px-6 py-12 sm:py-24 lg:px-8">
                         <div className="mx-auto max-w-xl flex flex-col items-center justify-center text-center">
                             <div className='flex place-content-center'>
@@ -47,7 +47,7 @@ const Contact = () => {
                                     Let's Talk
                                 </h1>
                             </div>
-                            <p className="mt-3 text-lg text-gray-600">Feature request? Suggestion? or maybe you'd like to be our critic! Here's a form just for that.</p>
+                            {/* <p className="mt-3 text-lg text-gray-600">Feature request? Suggestion? or maybe you'd like to be our critic! Here's a form just for that.</p> */}
                         </div>
                         <form action="mailto:shabnaz608@gmail.com" method="GET"  className="mx-auto mt-16 max-w-xl sm:mt-20">
                             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">

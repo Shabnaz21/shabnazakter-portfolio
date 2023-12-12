@@ -3,18 +3,24 @@ const Skill = () => {
         <section name= 'skill'>
             <div className="container mx-auto bg-neutral mt-28"> 
                 <div className="">
-                    <div className="flex px-10 py-24  md:flex-row flex-col items-center">
+                    <div className="flex lg:px-10 py-24 px-5 gap-x-10 xl:flex-row 
+                    flex-col items-center">
+                        
                         <div
-                            className="lg: md:w-1/2  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                            <h1 className="pl-2 text-3xl font-bold border-l-8
-                             border-blue-400 md:text-5xl font-jost text-white">
+                            className="
+                            flex flex-col md:items-start md:text-left mb-16
+                            lg:mb-20 md:mb-0  text-center">
+                            
+                            <h1 className="pl-2 text-3xl  font-bold border-l-8
+                             border-blue-400 md:text-5xl font-jost mb-6 text-white">
                                 Let’s Explore Programming Skills
                             </h1>
-                            <p>Need description</p>
+                            {/* <p className="text-lg max-w-lg">Check out my portfolio to see my experience with a
+                                variety of programming languages and technologies</p> */}
                            
                         </div>
-                        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                            <div className="flex gap-x-10 ">
+                        <div className="lg:max-w-2xl  lg:w-full md:mt-10 w-5/6">
+                            <div className=" lg:flex gap-x-10 ">
                                 <div className="space-y-4">
                                     {/* cards-1 */}
                                     <div className="card  bg-base-100 hover:border-2 
